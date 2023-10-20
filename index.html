@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        div h2 {
+            color: #333;
+        }
+
+        div form div {
+            margin-bottom: 10px;
+        }
+
+        div form label {
+            display: inline-block;
+            width: 80px;
+        }
+
+        div form input[type="text"],
+        div form input[type="password"],
+        div form input[type="date"],
+        div form textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        div form input[type="radio"],
+        div form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        div form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        div form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin: 20px 0;
+            color: #666;
+        }
+
+        /* Відео та аудіо */
+        iframe,
+        audio {
+            width: 100%;
+        }
+
+        /* Соціальні мережі */
+        div ul.social-counter {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        div ul.social-counter li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        div ul.social-counter li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        div ul.social-counter li a:hover {
+            text-decoration: underline;
+        }
+
+        div .meteo-informer {
+            width: 500px;
+            min-height: 175px;
+            border-color: #FFC107;
+            background-color: #FFFFFF;
+            color: #2B2B2B;
+            font-family: Georgia, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Реєстрація</h2>
+        <form>
+            <div>Введіть своє ім'я: <input type="text"></div>
+            <div>Введіть своє прізвище: <input type="text"></div>
+            <div>Введіть пароль: <input type="password"></div>
+            <div>Виберіть стать:
+                <input type="radio" id="man" value="man" name="point">
+                <label for="man">чоловік</label>
+                <input type="radio" id="woman" value="woman" name="point">
+                <label for="woman">жінка</label>
+            </div>
+            <div>Виберіть дату народження: 
+                <input type="date" id="start" name="trip-start" value="2023-10-19" min="1930-01-01" max="2023-10-20">
+            </div>
+            <div>Виберіть мову програмування:<br>
+                <input id="Pascal" type="checkbox" name="languages" value="Pascal">
+                <label for="Pascal">Pascal</label><br>
+                <input id="PHP" type="checkbox" name="languages" value="PHP">
+                <label for="PHP">PHP</label><br>
+                <input id="js" type="checkbox" name="languages" value="JavaScript">
+                <label for="js">JavaScript</label><br>
+                <input id="basic" type="checkbox" name="languages" value="Basic">
+                <label for="basic">Basic</label><br>
+                <input id="c++" type="checkbox" name="languages" value="C++">
+                <label for="c++">C++</label>
+            </div>
+            <div>
+                <p>За потреби, можете залишити свій коментар тут:</p>
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+            <button>Надіслано</button>
+        </form>
+    </div>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5082.549263601358!2d30.485238569512447!3d50.43598503588349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x40d4cef2a01742cf%3A0x94d02f977be98e0!2z0JfQsNC70ZbQt9C90LjRh9C90LjQuSDQstC-0LrQt9Cw0Lsg0JrQuNGX0LIsINCS0L7QutC30LDQu9GM0L3QsCDQv9C70L7RidCwLCDQmtC40ZfQsiwg0KPQutGA0LDRl9C90LA!3m2!1d50.440494699999995!2d30.4896335!4m5!1s0x40d4cee9e88c9d2f%3A0x1b11dcb5203b8420!2z0ITQv9Cw0Lwg0KPQutGA0LDRl9C90LAsINCy0YPQu9C40YbRjyDQmtGD0LTRgNGP0YjQvtCy0LAsIDE00JEsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDMwMzU!3m2!1d50.4314229!2d30.487370799999997!5e0!3m2!1suk!2ssk!4v1697806821499!5m2!1suk!2ssk" width="600" height="450"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1697806870536!6m8!1m7!1so5ov2VZ5X6DxSFvhanEOeQ!2m2!1d50.43132976157619!2d30.48802749974741!3f297.0370774377972!4f7.063974253474129!5f0.7820865974627469" width="600" height="450"></iframe>
+    </div>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CFvmBXrFWn8?si=i93HsWqzWMvKxBFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div>
+        <figure>
+            <figcaption>Відтворити пісню з відео:</figcaption>
+            <audio controls="controls">
+                <source src="Sadsvit-flame.mp3" type="audio/mp3" />
+                <code>audio</code>.
+            </audio>
+        </figure>
+    </div>
+    <div>
+        <ul class="social-counter social social-color social-text">
+            <li class="facebook"><a href="https://www.facebook.com/svitlana.sulima.12" rel="nofollow" target="_blank" title="facebook">Facebook</a></li>
+            <li class="youtube"><a href="https://youtu.be/kUMe1FH4CHE?si=cbI1cwTFnQt2ahZ4" rel="nofollow" target="_blank" title="youtube">YouTube</a></ li>
+            <li class="pinterest"><a href="https://www.pinterest.com/pin/36028865742794988/" rel="nofollow" target="_blank" title="pinterest">Pinterest </a></li>
+            <li class="instagram"><a href="https://www.instagram.com/htmlcoding_/" rel="nofollow" target="_blank" title="instagram">Instagram</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <div class="meteo-informer" style="width: 360px; min-height: 175px; border-color: #FFC107; background-color: #FFFFFF; color: #2B2B2B; font-family: Georgia, sans-serif;">
+            <div id="meteo_informer">
+                <p><a href="https://openweathermap.org/city/703448">Погода в Києві</a></p>
+            </div>
+            <iframe src="https://openweathermap.org/city/703448"></iframe>
+        </div>
+    </div>
+    <hr>
+    <footer align="center">
+        The web page was created by a student of the TI-02 group, Henash Artem
+    </footer>
+</body>
+</html>
